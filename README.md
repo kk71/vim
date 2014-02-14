@@ -29,7 +29,7 @@ cd
 git clone https://github.com/kk71/vim.git
 mv vim .vim 
 ln -s .vim/vimrc .vimrc
-git clone https://github.com/gmarik/vundle.git .vim/
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim .vimrc # edit .vimrc, enable or comment plugins you need
 ```
 

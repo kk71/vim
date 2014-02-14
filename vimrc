@@ -274,7 +274,7 @@ let g:pymode_lint_checkers = ['pyflakes', 'mccabe']
 let g:pymode_folding = 0
 "rope补全和重构
 " TODO : rope自带的补全列表加载的速度缓慢
-let g:pymode_rope_completion = 1
+let g:pymode_rope_completion = 0
 let g:pymode_rope_autoimport = 0
 let g:pymode_rope_lookup_project = 0
 
@@ -361,8 +361,8 @@ nn <c-k> <c-w>k
 nn <c-l> <c-w>l
 "End 设置Ctrl+hjkl做窗口切换
 
-"normal模式中，空格即向下翻页
-:nmap <Space> <PageDown>
+"normal模式中，空格即向下滚动一行
+:nmap <Space> <c-e>
 
 "注释或解除注释
 nmap cm <leader>c<space>
