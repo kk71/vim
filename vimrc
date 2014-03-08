@@ -355,11 +355,13 @@ nmap <F7> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 "设置Ctrl+hjkl做窗口切换
-nn <c-h> <c-w>h
-nn <c-j> <c-w>j
-nn <c-k> <c-w>k
+"上下切换的时候，将新切入的窗口最大化
+nn <c-h> <c-w>h 
+nn <c-j> <c-w>j <c-w>_
+nn <c-k> <c-w>k <c-w>_
 nn <c-l> <c-w>l
 "End 设置Ctrl+hjkl做窗口切换
+
 
 "normal模式中，空格即向下滚动一行
 :nmap <Space> <c-e>
