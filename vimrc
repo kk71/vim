@@ -128,9 +128,6 @@ Bundle 'gmarik/vundle'
 "vim git插件
 Bundle 'tpope/vim-fugitive'
 
-"易用的替换和查找插件
-"Bundle 'Lokaltog/vim-easymotion'
-
 "将系统剪贴板应用于vim
 Bundle 'vim-scripts/CaptureClipboard'
 
@@ -184,23 +181,12 @@ Bundle 'last_edit_marker.vim'
 "常被其他插件引用
 Bundle 'synmark.vim'
 
-"displays the function parameter/prototypes in the preview window if you type a left parenthesis behind a function name. 
-"Bundle 'vim-scripts/autoproto.vim'
-
 "傻瓜们
 Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let NERDTreeWinSize = 18
-
-"索引
-" TODO : install ctags and put it's path into system path
-Bundle 'majutsushi/tagbar'
-let g:tagbar_width = 22
-if &filetype == 'python' || &filetype == "javascript" || &filetype == "sh"
-    :TagbarToggle
-endif
 
 "multi-cursors like sublime-text
 Bundle 'terryma/vim-multiple-cursors'
@@ -214,8 +200,6 @@ let g:Powline_symbols='fancy'
 "dpaste.com
 Bundle 'Dpaste.com-Plugin'
 
-"MRU:most recently used
-Bundle 'yegappan/mru'
 
 
 " ===vim/gVim===
@@ -236,16 +220,10 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 let g:sparkup="~/.vim/bundle/sparkup/sparkup.py"
 let g:sparkupExecuteMapping = '<tab>'
 
-"js indent
-Bundle "pangloss/vim-javascript"
-let javascript_enable_domhtmlcss=1
+" js frameworks
+Bundle "othree/javascript-libraries-syntax.vim"
 
-"jQuery highlighting
-Bundle 'jQuery'
-filetype plugin on     " required!
-au BufRead,BufNewFile *.js set syntax=jquery |"set all js scripts as jQuery
-
-"html5 highlighting
+" HTML5 highlighting
 Bundle 'othree/html5.vim'
 
 
@@ -255,7 +233,6 @@ Bundle 'othree/html5.vim'
 
 " ===Markdown===
 Bundle 'plasticboy/vim-markdown'
-"Bundle 'instant-markdown.vim'
 
 
 " ===Python===
@@ -351,8 +328,6 @@ endfunc
 "F7显示隐藏NERDTree
 nmap <F7> :NERDTreeToggle<CR>
 
-"F8显示或隐藏tagbar
-nmap <F8> :TagbarToggle<CR>
 
 "设置Ctrl+hjkl做窗口切换
 "上下切换的时候，将新切入的窗口最大化
