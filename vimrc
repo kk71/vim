@@ -201,6 +201,12 @@ let g:Powline_symbols='fancy'
 Bundle 'Dpaste.com-Plugin'
 
 
+" === golang ===
+" for some plugins in servers of google which is blocked in China,
+" edit hg in /sbin add '--insecure'
+Bundle 'fatih/vim-go'
+
+
 
 " ===vim/gVim===
 " FIXME :this plugin for now contains bugs
