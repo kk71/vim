@@ -3,7 +3,7 @@ kK's Vim
 
 so here comes my own vimrc now:P
 
-![kk's vimrc screenshot](https://raw.github.com/kk71/vim/master/screenshot.jpg)
+![kk's vimrc screenshot](https://raw.github.com/kk71/vim/master/screenshot.png)
 
 ### Mainly support:
 
